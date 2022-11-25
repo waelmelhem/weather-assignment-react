@@ -37,9 +37,9 @@ All good? Then let's get coding.
 
 You will be connecting to a real-time weather API to make a weather app that looks like this:
 
-![final design](src/img/instructions/final-design.png)
+![final design](public/img/instructions/final-design.png)
 
-![designgif](src/img/instructions/weatherappdemo.gif)
+![designgif](public/img/instructions/weatherappdemo.gif)
 
 ### 1. Getting started: Static HTML and SASS
 
@@ -78,7 +78,7 @@ This is about cutting up your one big single block of HTML and putting sections 
 
 You'll need several components - you can decide how much you want to break things up into different components, but at minimum you will need a `<Search />` component, and a `<CurrentWeather />` component (you can choose the naming you like).
 
-![wireframe](src/img/instructions/wireframe.png)
+![wireframe](public/img/instructions/wireframe.png)
 
 If you find yourself copy-pasting an HTML section multiple times with small changes, you've probably found a good candidate for a reusable React component.
 
@@ -144,7 +144,7 @@ We'll be using data from this API: https://openweathermap.org/forecast5 for whic
 
 **2)** Once logged in, go to the API keys tab and copy the default Key. Keep this somewhere safe as you will need it when you fetch data.
 
-![api key](src/img/instructions/api-key.png)
+![api key](public/img/instructions/api-key.png)
 
 **3)** The format you'll need to follow to make API calls is:
 `http://api.openweathermap.org/data/2.5/forecast?q=${CITY_NAME}&cnt=8&units=metric&appid=${YOUR_API_KEY}`
@@ -218,7 +218,7 @@ ___________
 
 Add a new section to your app that will display the weather over the next 24 hours in the given location.
 
-![final design](src/img/instructions/final-design.png)
+![final design](public/img/instructions/final-design.png)
 
 **Think about how you can manipulate the data to display the weather for each 3-hour chunk...**
 
