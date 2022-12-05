@@ -3,6 +3,11 @@
   width: 100vw;
   transition: background-color 1s ease-in;
 }
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
 
 .app__header,
 .app__main {
@@ -10,17 +15,157 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  font-family: 'Raleway', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.app__header{
+  align-items: start;
+  background-color: rgb(48, 147, 200);
+  input{
+    margin-left: 20px;
+    font-family: 'Raleway';font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(48, 147, 200);
+    height: 25px;
+    width: 250px;
+    color: white;
+    margin-right: 10px;
+    &:focus{
+      border-bottom: rgb(25, 39, 83) solid 1px;
+      background-color: rgb(48, 147, 200);
+    }
+  }
+  button{
+    font-family: 'Raleway';font-size: 15px;
+    height: 30px;
+    width: 150px;
+    background-color: rgb(31, 91, 123);
+    border: none;
+    padding: 5px;
+  }
+}
+.app__main{
+  background:rgb(154, 196, 222);
+  
+  z-index: -1;
+  // right:0px;
+  // bottom:0px;
+  // left:100
+  height: fit-content;
+  min-height:84.4%;
+}
+.MainTemp{
+  text-align: center;
+  img{
+    width: 200px;
+    margin-top: 0px;
+  }
+  .status{
+    color: white;
+    font-size: 20pt;
+    margin-top: auto;
+    position: relative;
+    bottom: 10px;
+    font-weight: 100;
+  }
+  .temp{
+    font-size: 18pt;
+    .head{
+      display: inline-flex;
+      font-size: 22pt;
+      font-weight: 5000;
+      padding-right: 15px;
+    }
+  }
+  .descrption{
+    font-size: 12pt;
+    .head{
+      display: inline-flex;
+      font-size: 14pt;
+      font-weight: 5000;
+      padding-right: 15px;
+    }
+  }
+}
+.list{
+  margin: 55px;
+  li{
+    text-align: center;
+    list-style-type: none;
+    img{
+      width: 120px;
+      margin: 10px 20px;
+    }
+  }
+}
 
 /*  Search bar */
 
+.sunTheem{
+  .app__header{
+    background-color: #65644b;
+    input{
+      background-color: #65644b;
+      color: white;
+      &:focus{
+        border-bottom: #24241d solid 1px;
+        background-color: #65644b;
+      }
+    }
+    button{
+      background-color: #24241d;
+      color: white;
+    }
+  }
+  .app__main{
+    background-color: #d6d39a
+  }
+}
+.rainTheem{
+  .app__header{
+    background-color: 	#4E6669;
+    input{
+      background-color: 	#4E6669;
+      color: white;
+      &:focus{
+        border-bottom: 	#1B2F3A solid 1px;
+        background-color: 	#4E6669;
+      }
+    }
+    button{
+      background-color: 	#1B2F3A;
+      color: white;
+    }
+  }
+  .app__main{
+    background-color: #A8AEAB;
+  }
+}
 
-
+.snowTheem{
+  .app__header{
+    background-color:  rgb(48, 147, 200);
+    input{
+      background-color: rgb(48, 147, 200);
+      color: white;
+      &:focus{
+        border-bottom: rgb(31, 91, 123) solid 1px;
+        background-color: rgb(48, 147, 200);
+      }
+    }
+    button{
+      background-color: rgb(31, 91, 123);
+      color: white;
+    }
+  }
+  .app__main{
+    background-color: rgb(154, 196, 222);
+  }
+}
 /* Current weather */
 
 
